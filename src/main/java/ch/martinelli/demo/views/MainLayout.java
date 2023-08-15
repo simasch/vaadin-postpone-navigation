@@ -1,6 +1,5 @@
 package ch.martinelli.demo.views;
 
-import ch.martinelli.demo.views.helloworld.HelloWorldView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
@@ -50,7 +49,7 @@ public class MainLayout extends AppLayout {
     private SideNav createNavigation() {
         SideNav nav = new SideNav();
 
-        nav.addItem(new SideNavItem("Hello World", HelloWorldView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
+        nav.addItem(new SideNavItem("Hello World", OneView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
 
         return nav;
     }
